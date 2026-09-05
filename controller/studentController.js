@@ -24,6 +24,8 @@ const createStudent = async (req, res) => {
   }
 };
 
+
+
 const getStudent = async (req, res) => {
   const { id } = req.params;
 
@@ -43,6 +45,8 @@ const getStudent = async (req, res) => {
     return res.status(500).json({ message: 'Unable to fetch student details' });
   }
 };
+
+
 
 const updateStudent = async (req, res) => {
   const { id } = req.params;
@@ -81,6 +85,8 @@ const updateStudent = async (req, res) => {
     return res.status(500).json({ message: 'Unable to update student profile' });
   }
 };
+
+
 
 const deleteStudent = async (req, res) => {
   const { id } = req.params;
